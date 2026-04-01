@@ -12,7 +12,7 @@ source:
   sha256: 5fbbdcec29fd6089837a8b94b1706436334fb47643c6b6af39db4d50b2f56033
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
@@ -39,7 +39,7 @@ requirements:
     - tabulate >=0.8.10
     - pytorch >=1.13.1
     - tqdm >=4.63.0
-    - transformers >=4.45.0,<5.0.0
+    - transformers >=4.45.0,<5.9.0
     - python-bioc <3.0.0,>=2.0.0
 
 tests:
