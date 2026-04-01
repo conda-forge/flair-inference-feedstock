@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: 0.15.3
+  version: "0.15.3"
 
 package:
   name: flair-inference
@@ -12,7 +12,7 @@ source:
   sha256: 5fbbdcec29fd6089837a8b94b1706436334fb47643c6b6af39db4d50b2f56033
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
