@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "0.15.4"
+  version: "0.15.5"
 
 package:
   name: flair-inference
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/f/flair-inference/flair_inference-${{ version }}.tar.gz
-  sha256: 8da78148df61e60e4b64e4bd3b521813fd0f4b485910495a8bc4a254238cbd6e
+  sha256: b3aebb4442d7101bffe9ac0d1d5c355ee86c1a4dec91c5245ef8a076a8cc213d
 
 build:
   number: 0
@@ -26,7 +26,7 @@ requirements:
     - deprecated >=1.2.13
     - ftfy >=6.1.0
     - gdown >=4.4.0
-    - huggingface_hub >=0.10.0
+    - huggingface_hub >=1.5.0
     - langdetect >=1.0.9
     - lxml >=4.8.0
     - more-itertools >=8.13.0
@@ -34,12 +34,13 @@ requirements:
     - pptree >=3.1
     - python-dateutil >=2.8.2
     - regex >=2022.1.18
+    - requests >=2.28.0
     - scikit-learn >=1.0.2
     - segtok >=1.5.11
     - tabulate >=0.8.10
-    - pytorch >=1.13.1
+    - pytorch >=2.5
     - tqdm >=4.63.0
-    - transformers >=4.45.0,<6.0.0
+    - transformers >=5.0.0,<6.0.0
     - python-bioc <3.0.0,>=2.0.0
 
 tests:
